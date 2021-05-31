@@ -1,2 +1,8 @@
-$("h1").text("Bye");
-$("button").text("Don't click me");
+
+$(document).keypress(function(event){
+  $("h1").text(event.key);
+});
+
+$("button").click(function(){
+  $("h1").css("color","purple");
+});
